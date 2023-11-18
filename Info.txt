@@ -124,12 +124,11 @@ unction Question() {
 
 
 --------------------
-** Import Google Fonts in next.js 14 **
+** Import Google Fonts in next.js 13 **
 (https://prismic.io/blog/nextjs-fonts)
 (https://nextjs.org/docs/pages/building-your-application/optimizing/fonts)
 
-npm install @next/font
-
+npm install @next/font  //  ne treba instalirati za Next.js 14
 
 
 🚚 IMPORT 
@@ -160,7 +159,7 @@ export default function RootLayout({ children }) {
     // 👇 Attach CSS variables to HTML
     <html
       lang="en"
-      className={`${openSans.variable} ${robotoMono.variable} font-sans`}
+      className={`${openSans.variable} ${robotoMono.variable}`}
     >
       <body>{children}</body>
     </html>
